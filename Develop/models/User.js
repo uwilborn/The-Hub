@@ -24,9 +24,12 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    school {
+    school_id {
       type: DataTypes.STRING,
       allowNull: false,
+    references{
+    model: 'school',
+    key: 'id',
     },
     grade {
       type: DataTypes.INTEGER,
