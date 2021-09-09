@@ -1,0 +1,20 @@
+{
+  "name": "The-Hub",
+  "version": "1.0.0",
+  "description": "Online Book store, book exchange, book clubs, and more",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uwilborn/The-Hub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uwilborn/The-Hub/issues"
+  },
+  "homepage": "https://github.com/uwilborn/The-Hub#readme"
+}
