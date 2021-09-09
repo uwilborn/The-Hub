@@ -11,32 +11,26 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    bookname_needed: {
-      type: DataTypes.STRING,
+    book_id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
+      references: {
+        model: 'books',
+        key: 'id',
+      },
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
     },
     bookqty_needed: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    date_created: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
-    },
-    needed_funding: {
-      type: DataTypes.FLOAT,
-      allowNull: false,
-    },
-     bookname_togive: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    bookqty_togive: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-  },
+  },    
   {
     sequelize,
     timestamps: false,
