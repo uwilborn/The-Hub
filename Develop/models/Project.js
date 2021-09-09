@@ -11,12 +11,13 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    bookname_needed: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
-      type: DataTypes.STRING,
+    bookqty_needed: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
     date_created: {
       type: DataTypes.DATE,
@@ -27,12 +28,13 @@ Project.init(
       type: DataTypes.FLOAT,
       allowNull: false,
     },
-    user_id: {
+     bookname_togive: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    bookqty_togive: {
       type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
+      allowNull: false,
     },
   },
   {
