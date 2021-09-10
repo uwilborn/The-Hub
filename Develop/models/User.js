@@ -24,26 +24,26 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    school_id {
-      type: DataTypes.STRING,
-      allowNull: false,
-    references: {
-    model: 'school',
-    key: 'id',
-     },
-    },
-    grade {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true,
-      },
-    },
+    // school_id {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // references: {
+    // model: 'school',
+    // key: 'id',
+    //  },
+    // },
+    // grade {
+    //   type: DataTypes.INTEGER,
+    //   allowNull: false,
+    // },
+    // email: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    //   unique: true,
+    //   validate: {
+    //     isEmail: true,
+    //   },
+    // },
     password: {
       type: DataTypes.STRING,
       allowNull: false,

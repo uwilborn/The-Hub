@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 
 class Books extends Model {}
 
-School.init(
+Books.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -19,7 +19,7 @@ School.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    Title: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -37,7 +37,7 @@ School.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'books',
   }
 );
 

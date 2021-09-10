@@ -11,19 +11,13 @@ School.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    schoolname: {
+    school_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    schoollevel: {
+    school_level: {
       type: DataTypes.STRING,
-    },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
+      allowNull: false,
     },
   },
   {

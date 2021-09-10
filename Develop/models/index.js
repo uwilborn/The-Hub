@@ -1,4 +1,5 @@
 const User = require('./User');
+const Books = require('./books')
 const Project = require('./Project');
 
 User.hasMany(Project, {
@@ -11,20 +12,20 @@ Project.belongsTo(User, {
 });
 
 /*Constructors Here?*/
-class Model {
-  constructor() {}
-}
+// class Model {
+//   constructor() {}
+// }
 
-class View {
-  constructor() {}
-}
+// class View {
+//   constructor() {}
+// }
 
-class Controller {
-  constructor(model, view) {
-    this.model = model
-    this.view = view
-  }
-}
+// class Controller {
+//   constructor(model, view) {
+//     this.model = model
+//     this.view = view
+//   }
+// }
 
-const app = new Controller(new Model(), new View())
+// const app = new Controller(new Model(), new View())
 module.exports = { User, Project };

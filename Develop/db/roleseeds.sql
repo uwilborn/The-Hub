@@ -1,4 +1,4 @@
-use employees_db;
+use aabooks_db;
 
 insert into role(title,salary,department_id)values('Manager',12093,1);
 insert into role(title,salary,department_id)values('Manager',3223,2);

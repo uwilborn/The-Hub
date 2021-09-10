@@ -11,7 +11,7 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    book_id: {
+    books_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
@@ -19,7 +19,7 @@ Project.init(
         key: 'id',
       },
     },
-    user_id: {
+    user_data_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
