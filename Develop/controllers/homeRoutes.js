@@ -2,7 +2,7 @@ const router = require('express').Router()
 
 router.get("/",function(req,res){
     console.log("Home route")
-    res.render("landing____")
+    res.render("landing")
 })
 
 router.get("/profile",function(req,res){
