@@ -9,9 +9,9 @@ router.get("/about",function(req,res){
     console.log("about")
     res.render("profile")
 })
-router.get("/memberlogin",function(req,res){
-    console.log("memberlogin")
-    res.render("memberlogin")
+router.get("/login",function(req,res){
+    console.log("login")
+    res.render("login")
 })
 router.get("/bookexchange",function(req,res){
     console.log("bookexchange")
