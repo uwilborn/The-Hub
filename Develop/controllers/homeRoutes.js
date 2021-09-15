@@ -5,13 +5,25 @@ router.get("/",function(req,res){
     res.render("landing")
 })
 
-router.get("/profile",function(req,res){
-    console.log("profile")
+router.get("/about",function(req,res){
+    console.log("about")
     res.render("profile")
 })
-router.get("/login",function(req,res){
-    console.log("login+++++")
-    res.render("login")
+router.get("/memberlogin",function(req,res){
+    console.log("memberlogin")
+    res.render("memberlogin")
+})
+router.get("/bookexchange",function(req,res){
+    console.log("bookexchange")
+    res.render("bookexchange")
+})
+router.get("/bookstore",function(req,res){
+    console.log("bookstore")
+    res.render("bookstore")
+})
+router.get("/contact",function(req,res){
+    console.log("contact")
+    res.render("contact")
 })
 
 module.exports = router;
