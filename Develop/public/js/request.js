@@ -32,13 +32,13 @@ if(isset($_POST['submit']))
 {		
     $rfname = $_POST['first_name'];
     $rlname = $_POST['last_name'];
-  $afname = $_POST['first_name'];
-    $alname = $_POST['age'];
-  $btitle= $_POST['first_name'];
-    $bqty = $_POST['age'];
+  $afname = $_POST['author_first_name'];
+    $alname = $_POST['author_first_name'];
+  $btitle= $_POST['book title'];
+    $bqty = $_POST['book_quantity'];
   
 
-    $insert = mysqli_query($db,"INSERT INTO `tblemp`(`fullname`, `age`) VALUES ('$fullname','$age')");
+    $insert = mysqli_query($db,"INSERT INTO `user_data`(`fullname`, `age`) VALUES ('$rfname','$age')");
 
     if(!$insert)
     {
@@ -64,28 +64,7 @@ mysqli_close($db); // Close connection
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  Option 3: 
   
   if (rfname && rlname && afname && alname && btitle && bqty) {
     // Send a POST request to the API endpoint
