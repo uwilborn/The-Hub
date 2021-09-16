@@ -1,15 +1,15 @@
 const requestFormHandler = async (event) => {
   event.preventDefault();
 
-  // Collect values from the login form
+  // Collect values from the request form
   const rfname = document.querySelector('#first-request').value.trim();
   const rlname = document.querySelector('#last-request').value.trim();
-  const afname = document.querySelector('#author-name').value.trim();
-  const alname = document.querySelector('#password-login').value.trim();
-  const btitle = document.querySelector('#email-login').value.trim();
+  const afname = document.querySelector('#author-first').value.trim();
+  const alname = document.querySelector('#author-last').value.trim();
+  const btitle = document.querySelector('#btitle').value.trim();
   const bqty = document.querySelector('#quantity').value.trim();
 
-  if (email && password) {
+  if (rfname && rlname && afname && alname && btitle && bqty) {
     // Send a POST request to the API endpoint
     const response = await fetch('/api/users/login', {
       method: 'POST',
