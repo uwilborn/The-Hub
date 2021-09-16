@@ -48,20 +48,8 @@
      </div>
      </div>
      
-      {{#if request.length}}
-  <div class="col-md-6 project-list">
-    <h3>Current Requests:</h3>
-
-    {{#each requests as |request|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/request/{{book.id}}">{{book.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{book.id}}">DELETE</button>
-      </div>
-
-      <script src="./js/request.js"></script>
+     
+      <script src="./js/donate.js"></script>
       
       
 
