@@ -14,17 +14,14 @@ router.get("/login",function(req,res){
     res.render("login")
 })
 router.get("/bookexchange",function(req,res){
-    console.log("exchange")
-    res.render("exchange")
+    console.log("request")
+    res.render("request")
 })
 router.get("/bookstore",function(req,res){
-    console.log("store")
-    res.render("store")
+    console.log("donate")
+    res.render("donate")
 })
-router.get("/contact",function(req,res){
-    console.log("support")
-    res.render("support")
-})
+
 router.get("/contact",function(req,res){
     console.log("contact")
     res.render("contact")
