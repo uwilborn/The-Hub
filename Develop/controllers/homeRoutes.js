@@ -13,9 +13,14 @@ router.get("/login",function(req,res){
     console.log("login")
     res.render("login")
 })
-router.get("/exchange",function(req,res){
-    console.log("request")
-    res.render("request")
+router.get("/profile",function(req,res){
+    console.log("profile", req.session.user_id)
+    let user = {
+        id: req.session.user_id,
+        name: req.session.user_name,
+        email: req.session.user_email
+    }
+    res.render("landing", user)
 })
 router.get("/bookstore",function(req,res){
     console.log("donate")
