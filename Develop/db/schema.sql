@@ -19,11 +19,4 @@ create table user (
     password varchar(30),
     );
 
-    -- create table exchange (
-    -- id integer Primary key Auto_increment,
-    -- user_id integer, 
-    -- book_id integer,
-    -- bookqty_needed integer,
-    -- foreign key fk2(user_id) references user_data(id)
-    -- foreign key fk3(book_id) references books(id)
-    -- );
+ 

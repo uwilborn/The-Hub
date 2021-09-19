@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { User } = require('../../models');
 
 router.post('/', async (req, res) => {
-  console.log("User creation router++++++++++")
+  console.log("User creation router++++++++++",req.body)
   try {
     const userData = await User.create(req.body);
      console.log(userData,"User created")
@@ -13,6 +13,7 @@ router.post('/', async (req, res) => {
       res.status(200).json(userData);
     });
   } catch (err) {
+    console.log(err);
     res.status(400).json(err);
   }
 });
