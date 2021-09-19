@@ -11,11 +11,7 @@ Books.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    author_firstname: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    author_lastname: {
+    author: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -23,12 +19,16 @@ Books.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    genre: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    book_cost: {
+    donated_by: {
       type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
+    claimed_by: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
   },

@@ -9,20 +9,20 @@ const requestFormHandler = async (event) => {
   const btitle = document.querySelector('#btitle').value.trim();
   const bqty = document.querySelector('#quantity').value.trim();
 
-  Option 1:
+//   Option 1:
   
-  <?php
-// Make a MySQL Connection
-mysql_connect("localhost", "username", "password") or die(mysql_error());
-mysql_select_db("aabooks") or die(mysql_error());
+//   <?php
+// // Make a MySQL Connection
+// mysql_connect("localhost", "username", "password") or die(mysql_error());
+// mysql_select_db("aabooks") or die(mysql_error());
 
-// Insert a row of information into the table "user"
-mysql_query("INSERT INTO user 
-(first_name, last_name, author_firstname, author_lastname, book_title, quantity) VALUES(rfname, rlname, afname, alname, btitle, bqty) ") 
-or die(mysql_error());  
+// // Insert a row of information into the table "user"
+// mysql_query("INSERT INTO user 
+// (first_name, last_name, author_firstname, author_lastname, book_title, quantity) VALUES(rfname, rlname, afname, alname, btitle, bqty) ") 
+// or die(mysql_error());  
 
-echo "Data Inserted!";
-?>
+// echo "Data Inserted!";
+// ?>
   
   Option 2:
   <?php

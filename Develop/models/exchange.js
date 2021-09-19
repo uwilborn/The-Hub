@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class School extends Model {}
+class Exchange extends Model {}
 
-School.init(
+Project.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,15 +11,26 @@ School.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    school_name: {
-      type: DataTypes.STRING,
+    books_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'books',
+        key: 'id',
+      },
+    },
+    user_data_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
+    bookqty_needed: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
-    school_level: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-  },
+  },    
   {
     sequelize,
     timestamps: false,
@@ -29,4 +40,4 @@ School.init(
   }
 );
 
-module.exports = School;
+module.exports = Exchange;

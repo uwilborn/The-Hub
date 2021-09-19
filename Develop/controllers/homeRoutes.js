@@ -13,7 +13,7 @@ router.get("/login",function(req,res){
     console.log("login")
     res.render("login")
 })
-router.get("/bookexchange",function(req,res){
+router.get("/exchange",function(req,res){
     console.log("request")
     res.render("request")
 })
