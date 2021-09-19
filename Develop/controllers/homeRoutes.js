@@ -20,7 +20,7 @@ router.get("/profile",function(req,res){
         name: req.session.user_name,
         email: req.session.user_email
     }
-    res.render("landing", user)
+    res.render("profile", user)
 })
 router.get("/bookstore",function(req,res){
     console.log("donate")
