@@ -14,11 +14,27 @@
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header id="header_bar" class="bg-warning text-center display-flex justify-space-between align-center p-2">
-      <h1>
-         <a href="/">The Hub!</a>
-      </h1>
+  <div>
+    <div id="top">
+    <header id="header" >
+     <div id="title"> The Hub
+      </div>
+  <div id="menu">
+    <ul>
+      <li><a href="/" class="current"><span>Home</span></a></li>
+      <li><a href="/about"><span>About Us</span></a></li>
+      <li><a href="/login"><span>Login</span></a></li>
+      <li><a href="/exchange"><span>Request-A-Book</span></a></li>
+      <li><a href="/donate"><span>Donate-A-Book</span></a></li>
+      <li><a href="/contact"><span>Contact</span></a></li>
+    </ul>
+  </div>
+      <div class="searchBar">
+        <div class="search">
+        	<div class="txt"><input type="text"></div>
+            <div class="searchBt"><input type="button" value="search"></div>
+        </div>
+        </div>
       <nav>
       
         <!-- Conditionally render login, donate, request or logout links -->
@@ -29,10 +45,11 @@
         
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        {{!-- <a href="/login">login</a> --}}
         {{/if}}
       </nav>
     </header>
+    </div>
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}

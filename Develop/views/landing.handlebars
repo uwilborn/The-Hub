@@ -1,53 +1,63 @@
-<div id="main"><!-- Main starts here -->
-<div id="header"><!-- Header starts here -->
-
-
 
 <!-- Top Bar Menu starts-->
-    <div id="wrapper">
-  <div id="menu">
+    {{!-- <div> --}}
+  {{!-- <div id="menu">
     <ul>
-      <li><a href="/" class="current"><span>.01</span>Home</a></li>
-      <li><a href="/about"><span>.02</span>About Us</a></li>
-      <li><a href="/login"><span>.03</span>Login</a></li>
-      <li><a href="/exchange"><span>.04</span>Request-A-Book</a></li>
-      <li><a href="/donate"><span>.05</span>Donate-A-Book</a></li>
-      <li><a href="/contact"><span>.07</span>Contact</a></li>
+      <li><a href="/" class="current"><span>Home</span></a></li>
+      <li><a href="/about"><span>About Us</span></a></li>
+      <li><a href="/login"><span>Login</span></a></li>
+      <li><a href="/exchange"><span>Request-A-Book</span></a></li>
+      <li><a href="/donate"><span>Donate-A-Book</span></a></li>
+      <li><a href="/contact"><span>Contact</span></a></li>
     </ul>
-  </div>
+  </div> --}}
  <!-- Top Bar Menu ends-->
-   {{id}} 
-  <h1>Welcome, {{name}}</h1>  
-     {{email}}
-    <div class="searchBar">
-        <div class="search">
-        	<div class="txt"><input type="text"></div>
-            <div class="searchBt"><input type="button" value="search"></div>
-        </div>
+   
+{{!--     
     	<div class="signIn">sign in</div>
-    </div>
+    </div> --}}
     <div class="logo">
-    	<a href="/"><img src="/images/james baldwin general.jpg" alt=""></a>
+    	<a href="/"><img id="main_img" src="/images/james baldwin general.jpg" alt=""></a>
     </div>
     <div><marquee behavior="scroll" direction="left">HTML scrolling text... </marquee></div><!--scrolling text-->
 
-   
 
-    <div class="subs">
-    	<p>SUBCRIBE to RSS</p><img src="IMAGE NEEDED" alt="">
-    </div>
-</div><!-- Header ends here -->
+    
 
+{{id}} 
+  <h1>Welcome, {{name}}</h1>  
+     {{email}}
 <div class="clear"></div>
 <div id="contentTop"></div><!-- Content starts here -->
 <div id="content">
 	<div class="welcomeHolder">
     <div class="welcome">
-    	<img src="IMAGE NEEDED" alt="">
-		<h1>James Baldwin</h1>
-        <p><em>James Arthur Baldwin was an American novelist, playwright, essayist, poet, and activist. His essays, collected in Notes of a Native Son, explore intricacies of racial, sexual, and class distinctions in the Western society of the United States during the mid twentieth-century </em></p>  
-         <p align="right"><input type="button" value="VIEW OUR MEALS" class="view"></p> 
-         <div class="clear"></div>
+    	<h2>Our Books</h2>
+      <div class="product_box margin_r35">
+        <h3>Maya Angelou</h3>
+        <div class="image_wrapper"> <a href="#"><img src="/images/MA_IKW.jpg" alt="" /></a> </div>
+        <a href="#">Exchange</a> | <a href="#">Donate</a> </div>
+      <div class="product_box margin_r35">
+        <h3>Maya Angelou</h3>
+        <div class="image_wrapper"> <a href="#"><img src="/images/MA_IKW.jpg" alt="" /></a> </div>
+        <a href="#">Exchange</a> | <a href="#">Donate</a> </div>
+      <div class="product_box">
+        <h3>Maya Angelou</h3>
+        <div class="image_wrapper"> <a href="#"><img src="/images/MA_IKW.jpg" alt="" /></a> </div>
+        <a href="#">Exchange</a> | <a href="#">Donate</a> </div>
+      <div class="cleaner"></div>
+      <div class="product_box margin_r35">
+        <h3>Maya Angelou</h3>
+        <div class="image_wrapper"> <a href="#"><img src="/images/MA_IKW.jpg" alt="" /></a> </div>
+        <a href="#">Exchange</a> | <a href="#">Donate</a> </div>
+      <div class="product_box margin_r35">
+        <h3>Maya Angelou</h3>
+        <div class="image_wrapper"> <a href="#"><img src="/images/MA_IKW.jpg" alt="" /></a> </div>
+        <a href="#">Exchange</a> | <a href="#">Donate</a> </div>
+      <div class="product_box">
+        <h3>Maya Angelou</h3>
+        <div class="image_wrapper"> <a href="#"><img src="/images/MA_IKW.jpg" alt="" /></a> </div>
+        <a href="#">Exchange</a> | <a href="#">Donate</a> </div>
     </div>
     <div class="welcomeBottom"></div>
     </div>
@@ -75,6 +85,6 @@
 <div class="copy">Copyright 2021 OurMeals</div>
 <div class="design">Project 2</div>
 </div>
-</div><!-- Main ends here -->
+
 
 
