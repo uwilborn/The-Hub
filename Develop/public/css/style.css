@@ -274,19 +274,12 @@ end of header */ */
     .view:hover { color:#f7cc1e; }
     
     
-    
-    
-    .hr {border: none 0;
-    background:url(img/hr.jpg) repeat-x left;
-    height: 2px;/*whatever the total width of the border-top and border-bottom equal*/
-    margin:20px 17px;
-    } 
-    
+      
+       
     #footer{
         width:980px;
         margin:10px auto;
-    /*	background:url(img/contentBg.png) repeat-y top center;*/
-    }
+     }
     
     .contactHeading{
     background:url(img/contactHeading.png) no-repeat left top;
@@ -388,3 +381,34 @@ end of header */ */
 .cleaner_h40 { clear: both; width:100%; height: 40px; }
 .cleaner_h50 { clear: both; width:100%; height: 50px; }
 .cleaner_h60 { clear: both; width:100%; height: 60px; }
+
+
+.product_box .image_wrapper {
+	padding: 4px;
+	border: 1px solid #2e202a;
+	margin-bottom: 10px;
+}
+
+#content .content_section {
+	clear: both;
+	width: 670px;
+	border-bottom: 1px dotted #666;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	margin: 0	;
+	padding: 2px 0;
+	font-size: 18px;
+	font-weight: normal;
+	color: #271a23;
+}
+
+.product_box h3 {
+	background: #2e202a;
+	padding: 3px 10px;
+	margin: 10px 0;
+	color: #aea68c;
+	font-size: 12px;
+}
