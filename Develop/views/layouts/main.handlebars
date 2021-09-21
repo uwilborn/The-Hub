@@ -23,21 +23,14 @@
     <ul>
       <li><a href="/" class="current"><span>Home</span></a></li>
       <li><a href="/about"><span>About Us</span></a></li>
-      <li><a href="/login"><span>Login</span></a></li>
-      <li><a href="/exchange"><span>Request-A-Book</span></a></li>
-      <li><a href="/donate"><span>Donate-A-Book</span></a></li>
+      <li><a href="/login"><span>Login/Signup</span></a></li>
+      
       <li><a href="/contact"><span>Contact</span></a></li>
     </ul>
-  </div>
-      <div class="searchBar">
-        <div class="search">
-        	<div class="txt"><input type="text"></div>
-            <div class="searchBt"><input type="button" value="search"></div>
-        </div>
-        </div>
-      <nav>
+  </div>  
+           {{!-- <nav> --}}
       
-        <!-- Conditionally render login, donate, request or logout links -->
+        {{!-- <!-- Conditionally render login, donate, request or logout links -->
         {{#if logged_in}}
         <a href="/profile">Profile</a> 
         <a href="/request">Donate</a>|
@@ -47,7 +40,7 @@
         {{else}}
         {{!-- <a href="/login">login</a> --}}
         {{/if}}
-      </nav>
+      </nav> --}}
     </header>
     </div>
     <main class="container container-fluid mt-5">
