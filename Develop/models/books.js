@@ -29,7 +29,7 @@ Books.init(
     },
     claimed_by: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
   },
   {

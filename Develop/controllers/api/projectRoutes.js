@@ -1,15 +1,16 @@
 const router = require('express').Router();
-const { Project } = require('../../models');
+const { Books } = require('../../models');
 
-router.post('/', async (req, res) => {
+router.post('/donate', async (req, res) => {
+  console.log("Post book",req.body)
   try {
-    const newProject = await Project.create({
-      ...req.body,
-      user_id: req.session.user_id,
-    });
-
+    const newProject = await Books.create({
+      ...req.body
+      });
+     console.log("Donate book",newProject)
     res.status(200).json(newProject);
   } catch (err) {
+    console.log("Err on donate book",err)
     res.status(400).json(err);
   }
 });

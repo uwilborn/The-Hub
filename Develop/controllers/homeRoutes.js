@@ -22,9 +22,18 @@ router.get("/profile",function(req,res){
     }
     res.render("profile", user)
 })
-router.get("/bookstore",function(req,res){
-    console.log("donate")
-    res.render("donate")
+router.get("/donate",function(req,res){
+    console.log("donate",req.session)
+    let user = {
+        id: req.session.user_id,
+        name: req.session.user_name,
+        email: req.session.user_email
+    }
+    res.render("donate",user)
+})
+router.get("/exchange",function(req,res){
+    console.log("exchange")
+    res.render("exchange")
 })
 
 router.get("/contact",function(req,res){
