@@ -1,7 +1,9 @@
 # The-Hub
-Online Book store, book exchange, book clubs, and more
+Online book exchange where people/students can donate books and view list of books available for request.
 
-DATABASE
-Name database (aabooks)
-Create database
-Create database tables
+Github:
+https://github.com/uwilborn/The-Hub
+
+Recording:
+https://watch.screencastify.com/v/BynT4HR1cjdahniVy4Hl
+
