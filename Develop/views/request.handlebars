@@ -12,13 +12,15 @@
       </thead>
       <tbody>
         {{#each allBooks }}
-        {{!-- <tr>
-          <td>{{this.author}}</td>
+        <tr>
+          <td>{{this.author}}
+            <button data-id={{this.id}} class="requestbook">Request</button>
+          </td>
           <td>{{this.title}}</td>
           <td>{{this.donated_by}}</td>
           <td>{{this.claimed_by}}</td>
-          <button data-id={{this.id}} class="requestbook">Request</button>
-        </tr> --}}
+          
+        </tr>
         {{this}}
         {{/each}}
       </tbody>
