@@ -14,7 +14,18 @@ router.post('/donate', async (req, res) => {
     res.status(400).json(err);
   }
 });
-
+router.get('/allbooks', async (req, res) => {
+  console.log("Get all books",req.body)
+  try {
+    let allBooks = await Books.findAll({raw:true});
+    
+     console.log("Get all books",allBooks)
+    res.status(200).render("request",{allBooks:allBooks});
+  } catch (err) {
+    console.log("Err on donate book",err)
+    res.status(400).json(err);
+  }
+});
 router.delete('/:id', async (req, res) => {
   try {
     const projectData = await Project.destroy({

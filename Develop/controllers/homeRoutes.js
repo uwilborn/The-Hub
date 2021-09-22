@@ -29,11 +29,17 @@ router.get("/donate",function(req,res){
         name: req.session.user_name,
         email: req.session.user_email
     }
+
     res.render("donate",user)
 })
 router.get("/exchange",function(req,res){
+    let user = {
+        id: req.session.user_id,
+        name: req.session.user_name,
+        email: req.session.user_email
+    }
     console.log("exchange")
-    res.render("exchange")
+    res.render("request",user)
 })
 
 router.get("/contact",function(req,res){

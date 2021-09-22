@@ -1,42 +1,39 @@
-<div class="row">
-  <div class="col-md-6">
-    <h2>Request a Book</h2>
+const router = require('express').Router();
+const { Books } = require('../../models');
 
-    <form class="form request-form">
+router.post('/request', async (req, res) => {
+  console.log("Post book",req.body)
+  try {
+    const newProject = await Books.create({
+      ...req.body
+      });
+     console.log("Request book",newProject)
+    res.status(200).json(newProject);
+  } catch (err) {
+    console.log("Err on request book",err)
+    res.status(400).json(err);
+  }
+});
 
-      <div class="form-group">
-        <label for="first-request">Requester's First Name:</label>
-        <input class="form-input" type="text" id="first-request" />
-      </div>
+router.delete('/:id', async (req, res) => {
+  try {
+    const projectData = await Project.destroy({
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    });
 
-      <div class="form-group">
-        <label for="last-request">Requester's Last Name:</label>
-        <input class="form-input" type="text" id="last-request" />
-      </div>
+    if (!projectData) {
+      res.status(404).json({ message: 'No project found with this id!' });
+      return;
+    }
 
-      <div class="form-group">
-        <label for="first-author">Author First Name:</label>
-        <input class="form-input" type="text" id="first-author" />
-      </div>
+    res.status(200).json(projectData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
-      <div class="form-group">
-        <label for="last-author">Author Last Name:</label>
-        <input class="form-input" type="text" id="last-author" />
-      </div>
+module.exports = router;
 
-      <div class="form-group">
-        <label for="title">Book Title:</label>
-        <input class="form-input" type="text" id="title" />
-      </div>
-
-      <div class="form-group">
-        <label for="quantity">Quantity:</label>
-        <input class="form-input" type="number" id="quantity" />
-      </div>
-
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">Submit</button>
-      </div>
-</form>
-</div>
-</div>
