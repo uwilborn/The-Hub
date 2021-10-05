@@ -1,4 +1,4 @@
-console.log("JS file")
+console.log('JS file');
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
@@ -16,7 +16,7 @@ const loginFormHandler = async (event) => {
 
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      document.location.replace('/profile');
+      document.location.replace('/');
     } else {
       alert(response.statusText);
     }
@@ -29,7 +29,7 @@ const signupFormHandler = async (event) => {
   const name = document.querySelector('#name-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
-  console.log("User",name,email,password)
+  console.log('User', name, email, password);
   if (name && email && password) {
     const response = await fetch('/api/users', {
       method: 'POST',
@@ -38,8 +38,8 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      console.log("USER created",response)
-      document.location.replace('/profile');
+      console.log('USER created', response);
+      document.location.replace('/');
     } else {
       alert(response.statusText);
     }
