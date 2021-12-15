@@ -3,7 +3,7 @@
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <title>The Hub</title>
+    <title>Escape To The City Books</title>
     <link
       href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css'
       rel='stylesheet'
@@ -26,36 +26,74 @@
   </head>
 
   <body>
-    <div>
-      <div id='top'>
-        <header id='header'>
-          <div id='title'>
-            The Hub
-          </div>
-          <div id='menu'>
-            <ul>
+    <div class="header">     
+      <nav>
+        <img src="/images/background2.jpg" class="logo">
+        <h2>Escape To The City Books</h2>
+        <ul class="nav-links">
               <li><a href='/' class='current'><span>Home</span></a></li>
               <li><a href='/about'><span>About Us</span></a></li>
-              <li><a href='/login'><span>Login/Signup</span></a></li>
+              <li><a href='/request'><span>Request</span></a></li>
+              <li><a href='/donate'><span>Donate</span></a></li>
+              <li><a href='/project'><span>The Vault</span></a></li>
+              <li><a href='/login'><span>Login</span></a></li>
               <li><a href='/contact'><span>Contact</span></a></li>
-            </ul>
-          </div>
+              <li class="btn"><a href='/login'><span>Signup</span></a></li>
+              </ul>
+      </nav>  
+    </div>
 
-        </header>
-      </div>
+  {{!-- <video muted autoplay loop class="back-video"  plays-inline>
+        <source src="/images/backgroundvideo.mp4" type="video/mp4">
+      </video> --}}
+<div class="left-side">
+<section id="login-section">
+    <div class='login-container'>
+  <h5> Please Login</h5>
+  <form>
+    <div class='form-control'>
+      <input type='text' required />
+      <label> Email</label>
+    </div>
+    <div class='form-control'>
+      <input type='password' required />
+      <label> Password</label>
+    </div>
+
+    <button class='btn-login'>Login</button>
+    <p class='text'> Don't have an account? <a href='#'> Register</a></p>
+
+  </form>
+</div>
+</section>
+</div>
+    
       <main class='container container-fluid mt-5'>
         <!-- Render the sub layout -->
         {{{body}}}
       </main>
-      <footer>
-
-      </footer>
-    </div>
+      
+      
+   
 
     {{!-- <!-- Render script for logged in users only -->
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}} --}}
+
+  
+  <div class="footer">
+    <p><span>The Hub</span></p>
+    <p><span>©2021 StemQA Corporation</span><p>
+    <nav>
+    <ul class="nav-links"> 
+              <li><a href='#'><span>Phone<br>1 800 600 0000</span></a></li>
+              <li><a href='#'><span>Email<br>info@TheHub.com</span></a></li>
+              
+              </ul>
+      </nav>
+  </div>
+
   </body>
 
 </html>
